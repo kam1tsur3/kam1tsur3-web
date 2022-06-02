@@ -103,4 +103,5 @@ theme: mango
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/kam1tsur3/kam1tsur3-web.git
