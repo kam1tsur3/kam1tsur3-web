@@ -8,7 +8,7 @@ subtitle: ''
 description: ''
 keywords:
 author: kam1tsur3
-language: en
+language: jp
 timezone: ''
 
 # URL
@@ -40,7 +40,10 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
+marked:
+  prependRott: true
+  postAsset: true
 relative_link: false
 future: true
 highlight:
@@ -97,8 +100,11 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-#theme: landscape
+#theme: apollo
 theme: mango
+
+theme_config:
+ favicon: /favicon.png
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
