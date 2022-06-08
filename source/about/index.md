@@ -20,5 +20,4 @@ Favorite: pwn, reversing
 
 # Others
 * [twitter](https://twitter.com/kam1tsur3)  
-* [github](https://github.com/kam1tsur3)
-* [old\_blog(Japanese)](https://kam1tsur3.hatenablog.com/)
+* [old blog(Japanese)](https://kam1tsur3.hatenablog.com/)
