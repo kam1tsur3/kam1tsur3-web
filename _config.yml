@@ -5,7 +5,7 @@
 # Site
 title: kam1tsur3-web
 subtitle: ''
-description: ''
+description: 'ctfとか色々'
 keywords:
 author: kam1tsur3
 language: jp
@@ -100,8 +100,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-#theme: apollo
-theme: mango
+theme: next
 
 theme_config:
  favicon: /favicon.png
