@@ -8,11 +8,12 @@ Job: security engineer
 Intereset: CTF 
 
 # CTF
-Team: [KUDoS](https://ctftime.org/team/71813)
+Team: [KUDoS](https://ctftime.org/team/71813), [hogehogeErs](https://ctftime.org/team/192122)
 Favorite: pwn, reversing
 
 ## award
-* SECCON CTF 2021: 15th(2nd in Japan)
+* SECCON CTF 2021: 15th(2nd in Japan 🥈👀💻)
+* WeCTF 2022: 2nd 🥈🥤x24
 
 # Others
 * [twitter](https://twitter.com/kam1tsur3)  
