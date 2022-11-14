@@ -12,7 +12,7 @@ SECCON CTF 2022にKUDoSで出場
 - [pwn](#pwn)
 	- [koncha(96pt 111solves)](#koncha)
 	- [babypf(278pt 10solves)](#babypf)
-- [おわり](#str.vs.cstr)
+- [おわり](#おわりに)
 
 ## pwn
 ### koncha
