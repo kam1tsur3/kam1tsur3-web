@@ -20,7 +20,7 @@ scanfのbuffer over flow
 1回目で何も入力しないことでstack上のゴミからlibcアドレスのリーク  
 2回目でropをするだけ
 
-```C
+```python
 #!/usr/bin/python3
 from pwn import *
 import sys
