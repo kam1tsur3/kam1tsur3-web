@@ -15,6 +15,11 @@ Favorite: pwn, reversing
 * SECCON CTF 2021: 15th(2nd in Japan 🥈👀💻)
 * WeCTF 2022: 2nd 🥈🥤x24
 
+# CVE
+* CVE-2022-39325 XSS
+* CVE-2022-41994 XSS
+* CVE-2022-42486 XSS
+
 # Others
 * [twitter](https://twitter.com/kam1tsur3)  
 * [old blog(Japanese)](https://kam1tsur3.hatenablog.com/)
