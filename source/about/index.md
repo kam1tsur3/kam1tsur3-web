@@ -16,9 +16,9 @@ Favorite: pwn, reversing
 * WeCTF 2022: 2nd 🥈🥤x24
 
 # CVE
-* CVE-2022-39325 XSS
-* CVE-2022-41994 XSS
-* CVE-2022-42486 XSS
+* CVE-2022-39325 ... XSS
+* CVE-2022-41994 ... XSS
+* CVE-2022-42486 ... XSS
 
 # Others
 * [twitter](https://twitter.com/kam1tsur3)  
