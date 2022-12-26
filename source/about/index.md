@@ -14,7 +14,8 @@ Favorite: pwn, reversing
 ## award
 * SECCON CTF 2021: 15th(2nd in Japan 🥈👀💻)
 * WeCTF 2022: 2nd 🥈🥤x24
-* SECCON CTF 2022 quals: 21th(2nd in Japan)
+* SECCON CTF 2022 quals: 21th(2nd in Japan🥈🎫)
+* Bsides Mumbai 2022: 2nd 🥈🎫
 
 # CVE
 * CVE-2022-39325 ... XSS
