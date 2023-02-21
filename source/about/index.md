@@ -11,11 +11,12 @@ Intereset: CTF
 Team: [KUDoS](https://ctftime.org/team/71813), [hogehogeErs](https://ctftime.org/team/192122)
 Favorite: pwn, reversing
 
-## award
+## History 
 * SECCON CTF 2021: 15th(2nd in Japan 🥈👀💻)
 * WeCTF 2022: 2nd 🥈🥤x24
 * SECCON CTF 2022 quals: 21th(2nd in Japan🥈🎫)
 * Bsides Mumbai 2022: 2nd 🥈🎫
+* SECCON CTF 2022 domestic Finalist
 
 # CVE
 * CVE-2022-39325 ... XSS
