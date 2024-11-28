@@ -1,5 +1,5 @@
 ---
-title: seccon13_quals_writeup
+title: SECCON13 Quals writeup
 date: 2024-11-27 10:05:44
 tags: [ctf,writeup,jp]
 ---
