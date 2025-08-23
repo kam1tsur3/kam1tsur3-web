@@ -13,7 +13,7 @@ Job: Security Engineer
 Interest: CTF 
 
 # CTF
-Team: [KUDoS](https://ctftime.org/team/71813), [hogehogeErs](https://ctftime.org/team/192122)
+Team: [KUDoS](https://ctftime.org/team/71813), [Ierae](https://ctftime.org/team/224122/)
 Favorite: pwn, reversing
 
 # Achievement
