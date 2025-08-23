@@ -9,7 +9,7 @@ date: 2022-06-02 23:52:03
 
 HN: kam1tsur3
 Country: Japan🇯🇵
-Job: security engineer
+Job: Security Engineer
 Interest: CTF 
 
 # CTF
@@ -20,22 +20,27 @@ Favorite: pwn, reversing
 ## CTF
 * SECCON CTF 2021: 15th(2nd in Japan 🥈👀💻)
 * WeCTF 2022: 2nd 🥈🥤x24
-* SECCON CTF 2022 quals: 21th(2nd in Japan🥈🎫)
+* SECCON CTF 2022 Quals: 21th(2nd in Japan🥈🎫)
 * Bsides Mumbai 2022: 2nd 🥈🎫
-* SECCON CTF 2022 domestic Finalist
+* SECCON CTF 2022 Domestic Finalist
+* SECCON 13 CTF Quals: 24th(4th in Japan🎫)
+* SECCON 13 CTF Domestic Final: 2nd 🥈🎫
 
 ## CVE
-* CVE-2022-39325 ... XSS
-* CVE-2022-41994 ... XSS
-* CVE-2022-42486 ... XSS
-* CVE-2023-47609 ... SQL Injection
+* CVE-2022-39325 ... XSS (CWE-79)
+* CVE-2022-41994 ... XSS (CWE-79)
+* CVE-2022-42486 ... XSS (CWE-79)
+* CVE-2023-47609 ... SQL Injection (CWE-89)
+* CVE-2025-41385 ... OS Command Injection (CWE-78)
+* CVE-2025-41406 ... XSS (CWE-79)
+* CVE-2025-47697 ... Client-Side Enforcment of Server-Side Security (CWE-602)
 
 ## Certifications
 * FE (2021/1  :Domestic, Fundamental Information Technology Enginneer Examination)
 * AP (2021/4  :Domestic, Applied Information Technology Engineer Examination)
 * SC (2021/10 :Domestic, Registered Information Security Specialist Examination)
 * OSWE 🕷️  (2023/4)
-* OSED 🦊 ( 2024/7)
+* OSED 🦊  (2024/7)
 
 # Others
 * [twitter](https://twitter.com/kam1tsur3)  
