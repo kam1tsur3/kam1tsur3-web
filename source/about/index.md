@@ -19,21 +19,34 @@ Favorite: pwn, reversing
 # Achievement
 ## CTF
 * SECCON CTF 2021: 15th(2nd in Japan 🥈👀💻)
-* WeCTF 2022: 2nd 🥈🥤x24
-* SECCON CTF 2022 Quals: 21th(2nd in Japan🥈🎫)
-* Bsides Mumbai 2022: 2nd 🥈🎫
+* SECCON CTF 2022 Quals: 21st(2nd in Japan🥈🎫)
 * SECCON CTF 2022 Domestic Finalist
+* Bsides Mumbai 2022: 2nd 🥈🎫
+* WeCTF 2022: 2nd 🥈🥤x24
 * SECCON 13 CTF Quals: 24th(4th in Japan🎫)
 * SECCON 13 CTF Domestic Final: 2nd 🥈🎫
+* LINE CTF 2025: 2nd 🥈💰
+* SECCON 14 CTF Quals: 32th(5th in Japan🎫)
+* TSG CTF 2025 Quals: 11st(6th in Japan🎫)
 
 ## CVE
-* CVE-2022-39325 ... XSS (CWE-79)
-* CVE-2022-41994 ... XSS (CWE-79)
-* CVE-2022-42486 ... XSS (CWE-79)
-* CVE-2023-47609 ... SQL Injection (CWE-89)
-* CVE-2025-41385 ... OS Command Injection (CWE-78)
-* CVE-2025-41406 ... XSS (CWE-79)
-* CVE-2025-47697 ... Client-Side Enforcment of Server-Side Security (CWE-602)
+* OSS WebApp🌐
+	* CVE-2022-39325: XSS
+	* CVE-2022-41994: XSS
+	* CVE-2022-42486: XSS
+* OSS WebApp🌐
+	* CVE-2023-47609: SQL Injection
+* Web Interface on IoT Devices 📽️
+	* CVE-2025-41385: OS Command Injection
+	* CVE-2025-41406: XSS
+	* CVE-2025-47697: Client-Side Enforcment of Server-Side Security
+* Mobile App📱
+	* CVE-2025-58781: Improper Certificate Validation
+* Web Interface on IoT Devices 🖨️
+	* CVE-2025-66635: Stack Buffer Overflow
+* OSS Groupware🌐
+	* CVE-2025-53523: XSS
+	* CVE-2025-58576: CSRF
 
 ## Certifications
 * FE (2021/1  :Domestic, Fundamental Information Technology Enginneer Examination)
