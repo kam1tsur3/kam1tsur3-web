@@ -104,10 +104,24 @@ ignore:
 theme: next
 
 theme_config:
- favicon: /favicon.png
+  favicon:
+    small: /favicon.png
+    medium: /favicon.png
+  scheme: Gemini
+  darkmode: true
+  creative_commons:
+    language: ja
+  menu:
+    home: / || fa fa-home
+    about: /about/ || fa fa-user
+    tags: /tags/ || fa fa-tags
+    archives: /archives/ || fa fa-archive
+  avatar:
+    url: /uploads/kam1tsur3.png
+  font:
+    global:
+      family: "hiragino Sans"
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
-  type: git
-  repo: https://github.com/kam1tsur3/kam1tsur3-web.git
+# GitHub Actions builds and deploys public/ to GitHub Pages.
